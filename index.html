@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expiry Alert Pro | Smart Inventory Tracking</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Unified Navigation with Glassmorphism -->
+    <nav id="navbar">
+        <a href="index.html" class="logo">
+            <i class="fas fa-bell"></i> Expiry Alert Pro
+        </a>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero reveal">
+        <div class="hero-text">
+            <div class="badge">
+                <i class="fas fa-sparkles"></i> POWERED BY GEMINI AI
+            </div>
+            <h1>Smart Tracking.<br><span class="gradient-text">Zero Waste.</span></h1>
+            <p>Built with Jetpack Compose. Track expiry dates using ML Kit scanning, organize by shop, and sync across devices seamlessly.</p>
+            <div class="btn-group">
+                <a href="https://play.google.com/store/apps/details?id=com.expiryalertpro" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-google-play"></i> Download Now
+                </a>
+                <a href="#simulator" class="btn btn-secondary">
+                    <i class="fas fa-play"></i> Try Demo
+                </a>
+            </div>
+            <div class="status-badge">
+                <i class="fas fa-check-circle"></i> SYSTEM STATUS: SAFE
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://img.freepik.com/free-vector/inventory-management-system-concept-hand-drawn-style_23-2148493125.jpg" alt="Inventory Management" loading="lazy">
+        </div>
+    </header>
+
+    <!-- Interactive Product Simulator -->
+    <section id="simulator" class="simulator-section reveal">
+        <div class="section-header">
+            <h2>Try It Live</h2>
+            <p>Experience how Expiry Alert Pro manages your products</p>
+        </div>
+        <div class="simulator-container">
+            <div class="simulator-controls">
+                <h3>Add Sample Product</h3>
+                <div class="product-form">
+                    <input type="text" id="product-name" placeholder="Product Name (e.g., Milk)" value="Milk">
+                    <input type="date" id="expiry-date">
+                    <button id="add-product-btn" class="btn btn-primary">
+                        <i class="fas fa-plus"></i> Add Product
+                    </button>
+                </div>
+            </div>
+            <div class="simulator-display">
+                <div id="product-card" class="product-card hidden">
+                    <div class="product-header">
+                        <h4 id="display-product-name">Milk</h4>
+                        <span id="status-indicator" class="status-safe">SAFE</span>
+                    </div>
+                    <div class="product-details">
+                        <p><i class="fas fa-calendar"></i> Expires: <span id="display-expiry-date">-</span></p>
+                        <p><i class="fas fa-clock"></i> Days Left: <span id="days-left">-</span></p>
+                    </div>
+                    <button id="remove-product-btn" class="btn-small">
+                        <i class="fas fa-trash"></i> Remove
+                    </button>
+                </div>
+                <div id="empty-state" class="empty-state">
+                    <i class="fas fa-box-open"></i>
+                    <p>Add a product to see it here</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Dashboard Mockup -->
+    <section class="dashboard-section reveal">
+        <div class="section-header">
+            <h2>Inventory Dashboard</h2>
+            <p>Manage products across different states</p>
+        </div>
+        <div class="dashboard-grid">
+            <div class="dashboard-card active">
+                <div class="card-icon"><i class="fas fa-box"></i></div>
+                <h3>Active Products</h3>
+                <p class="count">24</p>
+                <p class="description">Currently in stock</p>
+            </div>
+            <div class="dashboard-card consumed">
+                <div class="card-icon"><i class="fas fa-check-circle"></i></div>
+                <h3>Consumed</h3>
+                <p class="count">156</p>
+                <p class="description">Used products</p>
+            </div>
+            <div class="dashboard-card discarded">
+                <div class="card-icon"><i class="fas fa-trash-alt"></i></div>
+                <h3>Discarded</h3>
+                <p class="count">8</p>
+                <p class="description">Expired items</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section reveal">
+        <div class="section-header">
+            <h2>Powerful Features</h2>
+            <p>Everything you need to manage inventory efficiently</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <i class="fas fa-barcode"></i>
+                <h3>ML Kit Scanning</h3>
+                <p>Unlimited on-device scanning with Google ML Kit technology.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fas fa-robot"></i>
+                <h3>Gemini AI Lookup</h3>
+                <p>Smart product recognition powered by Google Gemini AI.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fas fa-credit-card"></i>
+                <h3>Google Play Billing</h3>
+                <p>Secure premium upgrades via Google Play Billing system.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fas fa-store"></i>
+                <h3>Shop Organization</h3>
+                <p>Categorize products by store or location for better management.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fas fa-sync"></i>
+                <h3>Cloud Sync</h3>
+                <p>Seamless synchronization across all your devices.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Material 3 Design</h3>
+                <p>Beautiful interface following Material Design 3 guidelines.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Expiry Alert Pro</h3>
+                <p>AI-powered inventory tracking with ML Kit scanning.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="mailto:expiryalertpro@gmail.com">Contact Support</a>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Rahul Lagariya | Expiry Alert Pro</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

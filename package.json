@@ -1,0 +1,22 @@
+{
+  "name": "expiry-alert-pro-web",
+  "version": "1.0.0",
+  "description": "AI-powered inventory tracking app landing page",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve"
+  },
+  "keywords": [
+    "expiry-tracking",
+    "inventory-management",
+    "ml-kit",
+    "android-app"
+  ],
+  "author": "Rahul Lagariya <expiryalertpro@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/expiryalertpro/expiryalertpro.git"
+  }
+}
